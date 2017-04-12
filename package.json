@@ -1,6 +1,6 @@
 {
   "name": "@fastweb/vue-notification",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "vue Notification通知框",
   "main": "src/index.js",
   "author": "yufangyang",

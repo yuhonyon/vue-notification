@@ -1,11 +1,12 @@
 language: node_js
-node_js:
-  - "7"
-
+ 
 deploy:
-   provider: npm
-   email: "975057282@qq.com"
-   api_key: "${TOKEN}"
-   allow_failure: true
-   on:
-      branch: master
+  - provider: script
+    script: echo "//registry.npmjs.org/:_authToken=$TOKEN" > ~/.npmrc 2>/dev/null
+    on:
+      tags: true
+ 
+  - provider: script
+    script: npm publish --access public
+    on:
+      tags: true
