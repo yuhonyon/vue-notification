@@ -1,5 +1,5 @@
 language: node_js
- 
+
 deploy:
   - provider: script
     script: echo "//registry.npmjs.org/:_authToken=$TOKEN" > ~/.npmrc 2>/dev/null
