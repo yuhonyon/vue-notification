@@ -1,5 +1,6 @@
 ## @fastweb/notification
 
+** 遗弃 **
  vue通知框
 
 ## 安装
